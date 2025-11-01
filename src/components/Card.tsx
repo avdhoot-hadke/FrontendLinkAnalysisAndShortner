@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 const Card = ({ title, desc }: { title: any, desc: any }) => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 120 }}
+            initial={{ opacity: 0, y: 90 }}
             whileInView={{
                 opacity: 1,
                 y: 0,
             }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7 }}
             className="shadow-md shadow-slate-400 border flex flex-col px-4 py-8  gap-3 rounded-sm"
         >
             <h1 className="text-slate-900 text-xl font-bold ">{title}</h1>

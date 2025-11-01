@@ -1,20 +1,29 @@
 import LinkLogo from '../assets/linkLogo.png';
 import { motion } from 'framer-motion';
 import Card from '../components/Card';
+import { useNavigate } from 'react-router-dom';
+import { useStoreContext } from '../ContextApi/ContextApi';
 
 export default function Home() {
+    const navigate = useNavigate();
+    const { token } = useStoreContext();
+    console.log("TOKEN FROM LANDING PAGE: " + token);
+
+    const dashBoardNavigateHandler = () => {
+
+    };
     return (
         <div className="min-h-[calc(100vh-64px)]  lg:px-14 sm:px-8 px-4">
             <div className="lg:flex-row flex-col    lg:py-5   pt-16   lg:gap-10 gap-8 flex justify-between items-center">
                 <div className=" flex-1">
                     <motion.h1
-                        initial={{ opacity: 0, y: -80 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{
                             opacity: 1,
                             y: 0,
                         }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.5 }}
                         className="font-bold font-roboto text-slate-800 md:text-5xl sm:text-4xl text-3xl   md:leading-[55px] sm:leading-[45px] leading-10 lg:w-full md:w-[70%] w-full"
                     >
                         Linklytics Simplifies URL Shortening For Efficient Sharing.
@@ -27,27 +36,27 @@ export default function Home() {
                     </p>
                     <div className="flex items-center gap-3">
                         <motion.button
-                            initial={{ opacity: 0, y: 80 }}
+                            initial={{ opacity: 0, y: 40 }}
                             whileInView={{
                                 opacity: 1,
                                 y: 0,
                             }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.8 }}
-                            // onClick={dashBoardNavigateHandler}
+                            transition={{ duration: 0.7 }}
+                            onClick={dashBoardNavigateHandler}
                             className="bg-custom-gradient  w-40 text-white rounded-md  py-2"
                         >
                             Manage Links
                         </motion.button>
                         <motion.button
-                            initial={{ opacity: 0, y: 80 }}
+                            initial={{ opacity: 0, y: 40 }}
                             whileInView={{
                                 opacity: 1,
                                 y: 0,
                             }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
-                            // onClick={dashBoardNavigateHandler}
+                            onClick={dashBoardNavigateHandler}
                             className="border-btnColor border w-40 text-btnColor rounded-md  py-2 "
                         >
                             Create Short Link

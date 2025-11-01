@@ -10,7 +10,7 @@
     --color-btnColor: #3364F7;
     --color-linkColor: #2a5bd7;
 
-    --shadow-custom: 0 0 15px rgba(0, 0, 0, 0.3);
+    --shadow-custom: 1px 3px 20px 1px rgba(0, 0, 0, 0.1);
     --shadow-right: 10px 0px 10px -5px rgba(0, 0, 0, 0.3);
 
     --font-family-roboto: "Roboto", sans-serif;
