@@ -91,14 +91,14 @@ const RegisterPage = () => {
                 <button
                     disabled={loader}
                     type='submit'
-                    className='bg-customRed font-semibold text-white  bg-custom-gradient w-full py-2 hover:text-slate-400 transition-colors duration-100 rounded-sm my-3'>
+                    className='bg-customRed font-semibold text-white  bg-custom-gradient w-full py-2 hover:text-slate-400 transition-colors duration-100 rounded-sm mt-6'>
                     {loader ? "Loading..." : "Register"}
                 </button>
 
-                <p className='text-center text-sm text-slate-700 mt-6'>
+                <p className='text-center text-xs font-thin  text-slate-700 mt-6'>
                     Already have an account?
                     <Link
-                        className='font-semibold underline hover:text-black'
+                        className='hover:text-black'
                         to="/login">
                         <span className='text-btnColor'> Login</span>
                     </Link>

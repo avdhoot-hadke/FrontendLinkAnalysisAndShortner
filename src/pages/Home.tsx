@@ -26,13 +26,13 @@ export default function Home() {
                         transition={{ duration: 0.5 }}
                         className="font-bold font-roboto text-slate-800 md:text-5xl sm:text-4xl text-3xl   md:leading-[55px] sm:leading-[45px] leading-10 lg:w-full md:w-[70%] w-full"
                     >
-                        Linklytics Simplifies URL Shortening For Efficient Sharing.
+                        Linko Simplifies URL Shortening For Efficient Sharing.
                     </motion.h1>
                     <p className="text-slate-700 text-sm my-5">
-                        Linklytics streamlines the process of URL shortening, making sharing
+                        Linko streamlines the process of URL shortening, making sharing
                         links effortless and efficient. With its user-friendly interface,
-                        Linklytics allows you to generate concise, easy-to-share URLs in
-                        seconds. Simplify your sharing experience with Linklytics today.
+                        Linko allows you to generate concise, easy-to-share URLs in
+                        seconds. Simplify your sharing experience with Linko today.
                     </p>
                     <div className="flex items-center gap-3">
                         <motion.button

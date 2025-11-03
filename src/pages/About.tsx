@@ -8,11 +8,11 @@ const AboutPage = () => {
                 </h1>
                 <p className="text-gray-700 text-sm  mb-8 xl:w-[60%] lg:w-[70%] sm:w-[80%] w-full ">
                     It simplifies URL shortening for efficient sharing. Easily
-                    generate, manage, and track your shortened links. Linklytics simplifies
+                    generate, manage, and track your shortened links. Linko simplifies
                     URL shortening for efficient sharing. Easily generate, manage, and
-                    track your shortened links. Linklytics simplifies URL shortening for
+                    track your shortened links. Linko simplifies URL shortening for
                     efficient sharing. Easily generate, manage, and track your shortened
-                    links. Linklytics simplifies URL shortening for efficient sharing.
+                    links. Linko simplifies URL shortening for efficient sharing.
                     Easily generate, manage, and track your shortened links.
                 </p>
                 <div className="space-y-5 xl:w-[60%] lg:w-[70%] sm:w-[80%] w-full ">
