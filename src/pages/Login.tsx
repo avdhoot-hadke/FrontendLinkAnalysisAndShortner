@@ -52,7 +52,7 @@ const LoginPage = () => {
             <form onSubmit={handleSubmit(loginHandler)}
                 className="sm:w-[450px] w-[360px] shadow-custom py-8 sm:px-8 px-4 rounded-2xl">
                 <h1 className="text-center font-thin lg:text-3xl text-2xl mb-8">
-                    Login Here
+                    Login
                 </h1>
 
                 <div className="flex flex-col gap-3">
