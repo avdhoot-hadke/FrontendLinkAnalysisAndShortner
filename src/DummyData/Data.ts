@@ -1,4 +1,4 @@
-export const dummyData = [
+export const dummyData: any = [
     {
         id: 1,
         clickDate: "2024-07-03",

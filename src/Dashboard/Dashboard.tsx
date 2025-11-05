@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Graph from './Graph'
-import { dummyData } from '../DummyData'
+import { dummyData } from '../DummyData/Data.ts'
 import { useStoreContext } from '../ContextApi/ContextApi'
 import { useFetchMyShortUrls, useFetchTotalClicks } from '../Hooks/Query'
 import ShortenPopUp from './ShortenPopUp'
@@ -17,16 +17,16 @@ const DashboardLayout = () => {
 
     // console.log(useFetchTotalClicks(token, onError));
 
-    const { isLoading, data: myShortenUrls, refetch } = useFetchMyShortUrls(token, onError)
+    const { isLoading, data: myShortenUrls = [], refetch } = useFetchMyShortUrls(token ?? "", onError)
 
-    const { isLoading: loader, data: totalClicks } = useFetchTotalClicks(token, onError)
+    const { isLoading: loader, data: totalClicks = [] } = useFetchTotalClicks(token ?? "", onError)
 
     function onError() {
         navigate("/error");
     }
-
     return (
         <div className="lg:px-14 sm:px-8 px-4 min-h-[calc(100vh-64px)]">
+            <p>Hello</p>
             {loader ? (
                 <Loader />
             ) : (

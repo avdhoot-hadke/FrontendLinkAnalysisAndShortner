@@ -26,7 +26,7 @@ export const useFetchMyShortUrls = (token: string, onError?: ErrorHandler) => {
         queryKey: ["my-shortenurls"],
         queryFn: async () => {
             try {
-                const res = await api.get<ShortUrl[]>("/api/urls/myurls", {
+                const res = await api.get<ShortUrl[]>("/api/links/my-links", {
                     headers: {
                         "Content-Type": "application/json",
                         Accept: "application/json",
@@ -55,7 +55,7 @@ export const useFetchTotalClicks = (token: string, onError?: ErrorHandler) => {
         queryFn: async (): Promise<ClickStats> => {
             try {
                 const res = await api.get<ClickStats>(
-                    "/api/urls/totalClicks?startDate=2024-01-01&endDate=2025-12-31",
+                    "/api/links/total-clicks?startDate=2025-10-01&endDate=2025-12-07",
                     {
                         headers: {
                             "Content-Type": "application/json",
