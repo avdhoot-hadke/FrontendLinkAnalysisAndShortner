@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import Graph from './Graph'
-import { dummyData } from '../DummyData/Data.ts'
-import { useStoreContext } from '../ContextApi/ContextApi'
-import { useFetchMyShortUrls, useFetchTotalClicks } from '../Hooks/Query'
+// import { dummyData } from '../DummyData/Data.ts'
+import { useStoreContext } from '../../ContextApi/ContextApi'
+import { useFetchMyShortUrls, useFetchTotalClicks } from '../../Hooks/Query'
 import ShortenPopUp from './ShortenPopUp'
 import { FaLink } from 'react-icons/fa'
 import ShortenUrlList from './ShortenUrlList'
 import { useNavigate } from 'react-router-dom'
-import Loader from '../components/Loader'
+import Loader from '../Loader'
 
 const DashboardLayout = () => {
     // const refetch = false;

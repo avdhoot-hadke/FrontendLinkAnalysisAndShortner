@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
-import DashboardLayout from "./Dashboard/Dashboard";
+import DashboardLayout from "./components/Dashboard/Dashboard";
 
 function App() {
 

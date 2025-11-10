@@ -9,7 +9,6 @@ const ShortenUrlList = ({ data }: { [key: string]: any }) => {
         <div className='my-6 space-y-4'>
             {/* <p>HELLO</p> */}
             {data.map((item: any) => {
-                // console.log("------------", { ...item })
                 return <ShortenItem key={item.id} {...item} />
             }
             )}

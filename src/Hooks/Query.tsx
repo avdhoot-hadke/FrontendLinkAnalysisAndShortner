@@ -5,7 +5,7 @@ type ErrorHandler = (error: unknown) => void;
 
 interface ShortUrl {
     id: string;
-    originalUrl: string;
+    originalLink: string;
     shortUrl: string;
     createdDate: string;
     clicks: number;

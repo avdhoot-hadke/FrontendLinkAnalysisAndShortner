@@ -8,12 +8,11 @@ import { MdAnalytics, MdOutlineAdsClick } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 import { Hourglass } from 'react-loader-spinner';
 import Graph from './Graph';
-import api from '../Api/Api';
-import { useStoreContext } from '../ContextApi/ContextApi';
+import api from '../../Api/Api';
+import { useStoreContext } from '../../ContextApi/ContextApi';
 
 
 const ShortenItem = ({ originalLink, shortLink, clickCount, createdDate }: { [key: string]: any }) => {
-    console.log("OG ", originalLink, " short linke ", shortLink, "CLICK count ", clickCount, "Created data", createdDate)
     const { token } = useStoreContext();
     const navigate = useNavigate();
     const [isCopied, setIsCopied] = useState(false);
